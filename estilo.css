@@ -1,0 +1,64 @@
+body{
+    background-color: #1e1d20;
+    }
+
+    /* na página criada, foi pedido no anuciado para que tenham tres colunas,
+     então foi utilizado o display flex para que a largura dessas colunas
+      ficassem distribuidas proporcionalmente entre si
+    e no flex direction foi colocada a  propriedade row para que a distribuição ficasse na horizontal */
+
+    .principal {
+        display: flex; 
+        flex-direction: row;
+        gap: 20px;       /* Espaço exato entre as colunas */
+        padding: 2% 2%;   /* 0 em cima/baixo e 4% nas laterais (o "respiro" que você gostou) */
+        width: 100%;
+        box-sizing: border-box; /* Garante que o padding não aumente a largura da página */
+    }
+    
+    .coluna1, .coluna2, .coluna3 {
+        flex: 1; /* Elas se dividem igualmente */
+        /* Remova a margin: 2% daqui para usar o gap do pai */
+    }
+
+    .principal img {
+        width: 100%;
+        margin: 1.5% 0;
+        border-radius: 8px;
+        border: 2px solid #0687d1;
+    }
+
+    /* formatação para os textos das colunas */
+.principal section p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+    a:link, a:visited{
+    color: #fff;
+    }    
+
+    p{
+        color: #ececec; 
+        font-weight: bold;
+        font-size: 1.0em;
+        width: 100%;
+        margin: 1.5%;
+
+        }
+    /* Foi utilizado um ID para o texto do Link já que ele é único na página */
+    #texto_link {
+            color: #ececec; 
+            font-weight: bold;
+            font-size: 2.0em;
+            }
+
+    /* Foi utilizado um ID para o Link já que ele é único na página */
+    #link-github {
+        color: #42df1b; 
+        font-weight: bold;
+
+        }
+    
